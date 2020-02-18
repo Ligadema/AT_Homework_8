@@ -25,8 +25,8 @@ public class Homework {
         Select selectRooms = new Select(rooms);
         selectRooms.selectByValue("1");
 
-        WebElement guests = driver.findElement(By.id("no_rooms"));
-        Select selectGuest = new Select(rooms);
+        WebElement guests = driver.findElement(By.id("group_adults"));
+        Select selectGuest = new Select(guests);
         selectGuest.selectByValue("2");
 
         WebElement hotels = driver.findElement(By.xpath("//*[@id=\"right\"]/div[5]"));
