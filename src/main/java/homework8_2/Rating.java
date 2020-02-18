@@ -26,8 +26,8 @@ public class Rating {
         Select selectRooms = new Select(rooms);
         selectRooms.selectByValue("1");
 
-        WebElement guests = driver.findElement(By.id("no_rooms"));
-        Select selectGuest = new Select(rooms);
+        WebElement guests = driver.findElement(By.id("group_adults"));
+        Select selectGuest = new Select(guests);
         selectGuest.selectByValue("2");
 
         WebElement filterButton = driver.findElement(By.id("sortbar_dropdown_button"));
